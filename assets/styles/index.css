@@ -10,7 +10,7 @@ body {
 div.media {
 	font-size: 64px;
 	margin: auto;
-	top: 50%;
+	top: 90%;
 	position: absolute;
     display: flex;
     justify-content: space-between;
