@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;700&display=swap');
 
 :root {
-	--background: #0A0A0A;
+	--background: #060606;
 	--text-color-primary: #FFF5C8;
 	--text-color-hover: #ED768A;
+	--background-alt: #0A0A0A;
 }
 
 html, body {
@@ -84,30 +85,8 @@ div.section {
 	position: relative;
 	display: block;
 	width: 100%;
+	height: 100%;
 	min-height: 100%;
-}
-
-#about {
-	padding-top: 36px;
-}
-
-div.bio {
-	font-size: 18px;
-	padding: 2%;
-	color: var(--text-color-primary);
-	height: calc((100% - 64px) / 6);
-}
-
-div.left {
-	background: red;
-	text-align: left justify-all;
-	padding-right: 15%;
-}
-
-div.right {
-	background: green;
-	text-align: right justify-all;
-	padding-left: 15%;
 }
 
 .skulls {
@@ -119,10 +98,111 @@ div.right {
 	background-size: auto 100%;
 }
 
+/* About  */
+
+#about {
+	height: auto !important;
+}
+
+div.bio {
+	font-size: 18px;
+	padding: 2%;
+	color: var(--text-color-primary);
+	height: 20%;
+	background-repeat: no-repeat;
+	background-size: 30%;
+}
+
+div.left {
+	background-position: left top;
+	text-align: left justify-all;
+	padding-right: 10%;
+}
+
+div.right {
+	background-position: right top;
+	text-align: right justify-all;
+	padding-left: 10%;
+}
+
+#band {
+	background-color:var(--background);
+	background-image: url("../images/band.png");
+}
+
+#guitarlead {
+	background-color:var(--background-alt);
+	background-position: right top;
+	background-image: url("../images/leadguitar.png");	
+}
+
+#drums {
+	background-color:var(--background);
+	background-image: url("../images/drums.png");
+}
+
+#bass {
+	background-color:var(--background-alt);
+	background-position: right center;
+	background-image: url("../images/bass.png");
+}
+
+#rhythmguitar {
+	background-color:var(--background);
+	background-position: left top;
+	background-image: url("../images/rhythmguitar.png");
+}
+
+#vocals {
+	background-color:var(--background-alt);
+	background-position: right center;
+	background-image: url("../images/vocals.png");	
+}
+
+div#latest-video {
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+div.poster-container {
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+img#gig {
+	width: 400px;
+	box-shadow: 0 2px 5px #000;
+}
+
+b {
+	padding-top: 16px;
+	display: block;
+	margin: auto;
+	width: 100%;
+	font-size: 32px;
+	text-align: center;
+}
+
 @media only screen and (max-width: 900px) {
 	div.media {
 		width: 75%;
 		left:calc(25% / 2);
+	}
+
+	div.bio {
+		text-shadow: 0 2px 5px rgba(0, 0, 0, 1.0);
+		font-size: 18px;
+		padding: 2%;
+		color: var(--text-color-primary);
+		height: 20%;
+		background-repeat: no-repeat;
+		background-size: 100%;
 	}
 }
 
@@ -130,5 +210,13 @@ div.right {
 	div.media {
 		width: 25%;
 		left:calc(75% / 2);
+	}
+
+	div.left {
+		padding: 2% 20% 2% 40%;
+	}
+
+	div.right {
+		padding: 2% 40% 2% 20%;
 	}
 }
