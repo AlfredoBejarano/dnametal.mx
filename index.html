@@ -9,12 +9,52 @@
 	<title>DNA Metal</title>
 </head>
 <body>
-	<div class="media">
-		<a href="https://www.instagram.com/dna_metal_mexico/"><i class="fa fa-instagram"></i></a>
-		<a href="https://www.facebook.com/dnametalmexico"><i class="fab fa-facebook"></i></a>
-		<a href="https://www.youtube.com/@d.n.a.metalmexico5328"><i class="fa fa-youtube"></i></a>
+	<nav>
+		<ul>
+			<li><a href="#home">Inicio</a></li>
+			<li><a href="#about">Nosotros</a></li>
+			<li><a href="#videos">Videos</a></li>
+		</ul>
+	</nav>
+	<div class="section skulls" id="home">
+		<div class="media">
+			<a href="https://www.instagram.com/dna_metal_mexico/"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.facebook.com/dnametalmexico"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.youtube.com/@d.n.a.metalmexico5328"><i class="fa fa-youtube"></i></a>
+		</div>
 	</div>
+	<div class="section" id="about">
+		<div class="bio left" id="band">
+			Formada en 2010 bajo la ideologia de "el Metal nos hace familia", DNA Metal es una banda de Heavy Metal Mexicano con un linaje tanto en la escena del genero como en sus integrantes. Amor, desamor, existencialismo entre otros son los principales temas de las liricas de esta banda.
+		</div>
+		<div class="bio right" id="guitarlead">
+			Alfredo Corona (Ciudad de Humo, Abaddon, Wotam) Es uno de los guitarristas precursores del genero quien junto a su hermano Daniel Corona, formaron Abaddon en 1985. Banda pionera en el genero y la escena en Mexico. Años mas tarde formaria DNA Metal para continuar ese legado junto a su hermano de sangre (Daniel) y su hermano del Metal (Alex).
+		</div>
+				<div class="bio left" id="band">
+			Formada en 2010 bajo la ideologia de "el Metal nos hace familia", DNA Metal es una banda de Heavy Metal Mexicano con un linaje tanto en la escena del genero como en sus integrantes. Amor, desamor, existencialismo entre otros son los principales temas de las liricas de esta banda.
+		</div>
+		<div class="bio right" id="guitarlead">
+			Alfredo Corona (Ciudad de Humo, Abaddon, Wotam) Es uno de los guitarristas precursores del genero quien junto a su hermano Daniel Corona, formaron Abaddon en 1985. Banda pionera en el genero y la escena en Mexico. Años mas tarde formaria DNA Metal para continuar ese legado junto a su hermano de sangre (Daniel) y su hermano del Metal (Alex).
+		</div>
+				<div class="bio left" id="band">
+			Formada en 2010 bajo la ideologia de "el Metal nos hace familia", DNA Metal es una banda de Heavy Metal Mexicano con un linaje tanto en la escena del genero como en sus integrantes. Amor, desamor, existencialismo entre otros son los principales temas de las liricas de esta banda.
+		</div>
+		<div class="bio right" id="guitarlead">
+			Alfredo Corona (Ciudad de Humo, Abaddon, Wotam) Es uno de los guitarristas precursores del genero quien junto a su hermano Daniel Corona, formaron Abaddon en 1985. Banda pionera en el genero y la escena en Mexico. Años mas tarde formaria DNA Metal para continuar ese legado junto a su hermano de sangre (Daniel) y su hermano del Metal (Alex).
+		</div>
+	</div>
+	<div class="section skulls" id="videos"> </div>
 	<link rel="stylesheet" href="assets/styles/index.css">
 	<script src="https://kit.fontawesome.com/57ac88606c.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    		anchor.addEventListener('click', function (e) {
+        	e.preventDefault();
+        	document.querySelector(this.getAttribute('href')).scrollIntoView({
+            	behavior: 'smooth'
+        	});
+    	});
+	});
+	</script>
 </body>
 </html>

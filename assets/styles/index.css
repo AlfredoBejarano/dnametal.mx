@@ -1,10 +1,18 @@
-body {
-	background-repeat: no-repeat;
-	background-image: url("../images/hero-min.png");
-	background-color: rgb(0,0,0);
-	background-position: center;
-	background-attachment: fixed;
-	background-size: auto 100%;
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;700&display=swap');
+
+:root {
+	--background: #0A0A0A;
+	--text-color-primary: #FFF5C8;
+	--text-color-hover: #ED768A;
+}
+
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	font-family: 'Schibsted Grotesk', sans-serif !important;
+	background: var(--background);
 }
 
 div.media {
@@ -17,15 +25,18 @@ div.media {
 }
 
 a {
-    color: #FFF5C8;
+    color: var(--text-color-primary);
     font-style: none;
-    text-decoration: none;
-    -webkit-text-stroke-width: 2px;
+    text-decoration: none;    
+}
+
+div.media > a {
+	-webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #000;
 }
 
 a:hover {
-    color: #ED768A;
+    color: var(--text-color-hover);
     font-style: none;
     cursor: pointer;
     text-decoration: none;
@@ -34,6 +45,78 @@ a:hover {
     transition-duration: .2s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);    
+}
+
+/* Navigation */
+nav {
+	z-index: 1000;
+	font-weight: 800;
+	font-size: 30px;
+	color: var(--text-color-primary);
+	display: block;
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.75);
+}
+
+nav ul {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: table;
+	table-layout:fixed;
+}
+
+nav ul li {
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	overflow-x: hidden;
+}
+
+/* Section */
+div.section {
+	position: relative;
+	display: block;
+	width: 100%;
+	min-height: 100%;
+}
+
+#about {
+	padding-top: 36px;
+}
+
+div.bio {
+	font-size: 18px;
+	padding: 2%;
+	color: var(--text-color-primary);
+	height: calc((100% - 64px) / 6);
+}
+
+div.left {
+	background: red;
+	text-align: left justify-all;
+	padding-right: 15%;
+}
+
+div.right {
+	background: green;
+	text-align: right justify-all;
+	padding-left: 15%;
+}
+
+.skulls {
+	background-repeat: no-repeat;
+	background-image: url("../images/hero-min.png");
+	background-color: rgb(0,0,0);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: auto 100%;
 }
 
 @media only screen and (max-width: 900px) {
