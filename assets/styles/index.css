@@ -217,6 +217,10 @@ i.member-credentials {
 	h2, h4 {
 		text-align: center;
 	}
+
+	div#dna-story {
+		background-size: 100% auto;
+	}
 }
 
 @media only screen and (min-width: 900px) {
