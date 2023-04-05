@@ -9,14 +9,24 @@
 	<title>DNA Metal</title>
 </head>
 <body>
-	<nav>
+	<nav id="nav_default">
 		<ul>
 			<li><a href="#home">Inicio</a></li>
-			<!--<li><a href="#about">Nosotros</a></li>-->
-			<li><a href="#videos">Videos</a></li>
 			<li><a href="#gigs">Eventos</a></li>
+			<li><a href="#videos">Videos</a></li>		
+			<li><a href="#about">Nosotros</a></li>
 		</ul>
 	</nav>
+		<nav id="nav_mobile">
+		<ul>
+			<li><a href="#home"><i class="fa fa-home"></i></a></li>			
+			<li><a href="#gigs"><i class="fa fa-map-pin"></i></a></li>
+			<li><a href="#videos"><i class="fa fa-music"></i></a></li>		
+			<li><a href="#about"><i class="fa fa-group"></i></a></li>
+		</ul>
+	</nav>
+
+	<!-- Home -->
 	<div class="section skulls" id="home">
 		<div class="media">
 			<a href="https://www.instagram.com/dna_metal_mexico/"><i class="fa fa-instagram"></i></a>
@@ -24,50 +34,52 @@
 			<a href="https://www.youtube.com/@d.n.a.metalmexico5328"><i class="fa fa-youtube"></i></a>
 		</div>
 	</div>
-	<!--<div class="section" id="about">
-		<div class="bio left" id="band">
-			<h3>DNA Metal</h3>
-			Formada en 2010 bajo la ideología de "el Metal nos hace familia", DNA Metal es una banda de Heavy Metal Mexicano con un linaje tanto en la escena del género como en sus integrantes. Amor, desamor, existencialismo entre otros son los principales temas de las líricas de esta banda.
+
+	<!-- Gigs -->
+	<div class="section" id="gigs">
+		<div class="poster-container">
+			<img src="assets/images/latest-gig.jpg" id="gig" />
+			<br/>
+			<a id="gig-cta" href="https://www.google.com/"><i class="fa fa-map-pin"></i> Como Llegar  <i class="fa fa-map-pin"></i></a>
 		</div>
-		<div class="bio right" id="guitarlead">
-			<h3>Alfredo Corona</h3>
-			Alfredo Corona <i>(Ex-Ciudad de Humo, Abaddon, Wotam)</i> Es uno de los guitarristas precursores del género quien junto a su hermano Daniel Corona, formaron Abaddon en 1985. Banda pionera en el género y la escena en México. Años más tarde formaría DNA Metal para continuar ese legado junto a su hermano de sangre (Daniel) y su hermano del Metal (Alex).
-		</div>
-		<div class="bio left" id="drums">
-			<h3>Alex Hunter</h3>
-			Alex Hunter <i>(Ex-Abaddon, Ex-Madre bruja, Wotam)</i> formo una hermandad fuerte como el Metal con los hermanos Corona y despertó a Abaddon de su descanso de más de una década. Durante la producción del disco homónimo de Abaddon de 2009 Alex tuvo que partir caminos con Abaddon, dando nacimiento a DNA Metal.
-		</div>
-		<div class="bio right" id="bass">
-			<h3>Daniel Corona</h3>
-			Daniel Corona <i>(Ex-Ciudad de Humo, Abaddon)</i> es el origen de todo. Introdujo a su hermano Alfredo en el camino del Hard Rock en Ciudad de Humo. Posteriormente, los hermanos Corona deciden formar Abaddon, dando el paso al Heavy Metal puro y duro de los 1980's. y Daniel pasando de las 6 a las 4 cuerdas que aún retiemblan con fuerza hasta el día de hoy.
-		</div>
-		<div class="bio left" id="rhythmguitar">
-			<h3><a href="https://www.bejivgm.com/">BejiVGM</a></h3>
-			Con ascendencia forjada en Metal, Corona Jr. incursiona en el mundo del Metal-VGM (soundtracks de juegos, películas y series adaptadas a varios subgéneros del metal) bajo el alias de "TheLastSurvivorFPS" por más de una década, incursionando también por el mundo de la grabación y producción musical. Alfredo y Daniel deciden invitar a BejiVGM de lleno al mundo del Metal con DNA Metal.
-		</div>
-		<div class="bio right" id="vocals">
-			<h3>Leslie Ortega</h3>
-			Leslie Ortega es quien narra las historias de DNA Metal con su poderosa y melódica voz. Habiendo forjado su voz dentro de las paredes de iglesias y monasterios, es la pieza clave para transmitir todas las historias que DNA Metal tiene que contar.
-		</div>
-	</div>-->
+	</div>
+
+	<!-- Videos -->
 	<div class="section skulls" id="videos">
 		<div id="latest-video">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/4ZyykzKsHXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="player"></iframe>
 		</div>
-
-		<div class="media">			
+		<div class="media">
 			<a href="https://music.amazon.com.mx/artists/B0C1F1NBCH/dna-metal"><i class="fa fa-amazon"></i></a>
 			<a href="https://music.apple.com/mx/artist/dna-metal/1680556799"><i class="fa fa-apple"></i></a>			
 			<a href="https://open.spotify.com/artist/3rz5RjLR3pdWfkAvQPj1Mk"><i class="fa fa-spotify"></i></a>
 		</div>
 	</div>
-	<div class="section" id="gigs">
-		<div class="poster-container">
-			<img src="assets/images/latest-gig.jpg" id="gig" />
-			<br/>
-			<b><a href="https://goo.gl/maps/5kwZLUBp7b9HD4t59">Como Llegar <i class="fa fa-map-pin"/></a></b>
+
+	<!-- About -->
+	<div class="section skulls" id="about">
+		<div id="dna-story">
+			<h4><i>Sobre</i></h4>
+			<h2>DNA Metal</h2>
+			<p>
+				Fundada en 2010 en la CDMX bajo la ideología de "el Metal nos hace familia", DNA Metal es una banda de Heavy Metal Mexicano con un linaje tanto en la escena del género como en sus integrantes. Amor, desamor, existencialismo entre otros son los principales temas de las líricas de DNA Metal.
+			</p>
+			<p>
+				 DNA Metal tuvo su primer sencillo "Noches de Metal" que debuto en la pelicula "La Diosa del Asfalto <i class="member-credentials">(2019)</i>" en Octubre de 2019.
+			</p>
+			<p>
+				Actualmente formada por:
+				<ul>									
+					<li>Leslie Ortega - Voz</li>
+					<li>Daniel Corona - Bajo <i class="member-credentials">(Ex-Ciudad de Humo, Abaddon)</i></li>
+					<li>Alfredo Corona - Guitarra <i class="member-credentials">(Ex-Ciudad de Humo, Abaddon, Wotam)</i></li>
+					<li>Alex Hunter - Bateria <i class="member-credentials">(Ex-Abaddon, Ex-Madre Bruja, Wotam)</i></li>
+					<li><a href="https://www.bejivgm.com/">BejiVGM - Guitarra</li>
+				</ul>
+			</p>
 		</div>
 	</div>
+
 	<link rel="stylesheet" href="assets/styles/index.css">
 	<script src="https://kit.fontawesome.com/57ac88606c.js" crossorigin="anonymous"></script>
 	<script type="text/javascript">
