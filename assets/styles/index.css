@@ -225,6 +225,7 @@ i.member-credentials {
 	}
 
 	.band {
+		overflow-y: auto;
 		background-size: auto 100%;
 	}
 }
